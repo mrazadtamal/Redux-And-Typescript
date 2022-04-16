@@ -1,7 +1,12 @@
+import { Box } from "@mui/material";
 import React from "react";
 
-const Rightbar = () => {
-  return <div>Rightbar</div>;
+const RightBar = () => {
+  return (
+    <Box bgcolor="red" flex={2} sx={{ display: { xs: "none", sm: "block" } }}>
+      RightBar
+    </Box>
+  );
 };
 
-export default Rightbar;
+export default RightBar;
