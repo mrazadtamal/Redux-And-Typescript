@@ -1,10 +1,18 @@
+import { Box, Stack } from "@mui/material";
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <h1>azad</h1>
-    </div>
+    <Box>
+      <Navbar />
+      <Stack direction="row" spacing={2}>
+        <Sidebar />
+        <Sidebar />
+        <Sidebar />
+      </Stack>
+    </Box>
   );
 }
 
